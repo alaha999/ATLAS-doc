@@ -150,3 +150,21 @@ INFO : upload sandbox
 INFO : submit user.alaha.testmc23e.2026_08_12_T173338.546598.e8588_a934_r16083_p6697/
 INFO : succeeded. new jediTaskID=51980820
 ```
+
+**How to check status of the grid jobs**
+```bash
+pbook showl <jediTaskID>
+```
+#output
+```
+$ pbook showl 51980817
+
+PBook user: Arnab Laha 
+Showing only max 1000 tasks in last 14 days. One can set days=N to see tasks in last N days, and limit=M to see at most M latest tasks 
+                                                                                                                                                                                                                                      
+  JediTaskID   Status   CreationDate          ModificationTime      ReqID   Progress   Files (done|failed|total)   TaskName                                                                  URL                                      
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+    51980817     done   2026-08-12 15:35:26   2026-08-12 16:16:13       2       100%   2|0|2                       user.alaha.testmc23e.2026_08_12_T173338.546597.e8588_a934_r16083_p6697/   https://bigpanda.cern.ch/task/51980817/  
+
+```
+
